@@ -6,18 +6,18 @@ body {
   overflow-x: hidden;
 }
 
-.banner video {
+/* .banner video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-}
+} */
 
-.sun-section {
+/* .sun-section {
   position: relative;
-  height: 200vh; /* to give scroll space */
-}
+  height: 200vh;
+} */
 
-.sun-container {
+/* .sun-container {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -25,18 +25,50 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.sun {
+/* .sun {
   width: 300px;
   transform: translateY(200px);
   transition: transform 0.3s ease-out;
-}
+} */
 
-.sun-desc {
+/* .sun-desc {
   opacity: 0;
   transition: opacity 0.5s ease-out;
   max-width: 500px;
   text-align: center;
   margin-top: 30px;
+} */
+
+.banner{
+  background-color: aqua;
+}
+
+.sun-section{
+  background-color:brown;
+}
+
+.mercury-section{
+  background-color: chartreuse;
+}
+
+.venus-section{
+  background-color: coral;
+}
+
+.earth-section{
+  background-color: darkslategrey;
+}
+
+.jupiter-section{
+  background-color: indigo;
+}
+
+.uranus-section{
+  background-color:aqua;
+}
+
+.neptune-section{
+  background-color:brown;
 }
