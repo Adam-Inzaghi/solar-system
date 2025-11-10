@@ -1,9 +1,8 @@
-/* === VENUS ANIMATION STYLE === */
-.venus-section {
+section {
+  min-height: 400px; /* cukup tinggi agar planet & deskripsi terlihat */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
   background: radial-gradient(circle at center, #1a1a2e, #000);
   overflow: hidden;
 }
@@ -13,20 +12,25 @@
   text-align: center;
 }
 
-.planet.venus {
+.planet {
   width: 180px;
   height: 180px;
   position: relative;
   transition: transform 0.2s ease-in-out;
+  z-index: 1; /* agar teks muncul di atas planet */
 }
 
 .planet-desc {
+  position: relative;
+  z-index: 10;
   opacity: 0;
   transform: translateY(30px);
   transition: all 1s ease;
   color: white;
   max-width: 340px;
   margin-top: 20px;
+  text-align: center;
+  text-shadow: 0 0 8px black; /* biar terlihat di atas planet */
 }
 
 .planet-desc.show {
