@@ -1,0 +1,89 @@
+body {
+    background-color: #0d0d26; /* Latar Belakang Gelap (Angkasa) */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+/* Container utama */
+.solar-system-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 20px;
+    flex-wrap: wrap; /* Agar responsif */
+}
+
+/* Peta Planet */
+#planet-map {
+    position: relative;
+    width: 600px; /* Ukuran area peta */
+    height: 600px;
+    /* Gunakan display:flex atau grid untuk tata letak yang lebih kompleks */
+}
+
+/* Styling Matahari */
+.sun {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(yellow, orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 50px rgba(255, 165, 0, 0.8);
+    cursor: pointer;
+}
+
+/* Styling Planet Umum */
+.planet {
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.planet:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #fff;
+}
+
+/* Posisi dan Ukuran Planet (Sederhana, bukan Skala Akurat) */
+#mercury { width: 10px; height: 10px; background-color: #a0a0a0; top: 250px; left: 300px; }
+#venus { width: 20px; height: 20px; background-color: #ff9900; top: 150px; left: 320px; }
+#earth { width: 25px; height: 25px; background-color: #0088ff; top: 350px; left: 400px; }
+#mars { width: 15px; height: 15px; background-color: #ff6347; top: 450px; left: 380px; }
+#jupiter { width: 50px; height: 50px; background-color: #d1b38e; top: 100px; left: 100px; }
+#saturn { 
+    width: 45px; 
+    height: 45px; 
+    background-color: #e6e6a8; 
+    top: 500px; 
+    left: 150px; 
+    /* Tambahkan cincin sederhana */
+    border: 3px solid #777; 
+    border-radius: 50%;
+}
+#uranus { width: 35px; height: 35px; background-color: #a0ffff; top: 10px; left: 50px; }
+#neptune { width: 35px; height: 35px; background-color: #4169e1; top: 550px; left: 500px; }
+
+
+/* Panel Detail */
+#detail-panel {
+    width: 350px;
+    min-height: 250px;
+    border: 1px solid #777;
+    padding: 20px;
+    background-color: #1a1a33;
+    text-align: left;
+}
+#detail-panel h2 {
+    color: #ffd700;
+}
