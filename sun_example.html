@@ -1,24 +1,89 @@
-<html>
-    <head>
-        <title></title>
-    </head>
-    <link rel="stylesheet" href="sun_example.css">
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Exploration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SECTION 1: Banner -->
   <section class="banner">
-    <!-- <video autoplay muted loop src="solar-system.gif"></video> -->
+    <!-- <video autoplay muted loop src="solar-system.mp4"></video> -->
     <img src="solar-system.gif" alt="">
+    <div class="banner-text">
+      <h1>Solar System Exploration</h1>
+      <p>Scroll down to explore each planet</p>
+    </div>
   </section>
 
+  <!-- SECTION 2: The Sun -->
   <section class="sun-section">
-    <div class="sun-container">
-      <img src="sun.jpg" class="sun" alt="Sun">
-      <div class="sun-desc">
+    <div class="planet-container">
+      <img src="sun.jpg" alt="The Sun" class="planet sun">
+      <div class="planet-desc">
         <h2>The Sun</h2>
-        <p>The Sun is the center of our Solar System and provides light and energy to all planets.</p>
+        <p>The Sun is a massive ball of hot plasma that powers our Solar System. It provides light and energy to all planets.</p>
       </div>
     </div>
   </section>
-</body>
-<script src="sun_example.js"></script>
 
+  <!-- SECTION 3: Mercury -->
+  <section class="mercury-section">
+    <div class="planet-container">
+      <img src="mercury.png" alt="Mercury" class="planet mercury">
+      <div class="planet-desc">
+        <h2>Mercury</h2>
+        <p>Mercury is the closest planet to the Sun and has the shortest orbit. It has extreme temperature differences between day and night.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Venus -->
+  <section class="venus-section">
+    <div class="planet-container">
+      <img src="venus.png" alt="Venus" class="planet venus">
+      <div class="planet-desc">
+        <h2>Venus</h2>
+        <p>Venus is often called Earth’s twin because of its size, but it has a thick toxic atmosphere that traps heat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Earth -->
+  <section class="earth-section">
+    <div class="planet-container">
+      <img src="earth.png" alt="Earth" class="planet earth">
+      <div class="planet-desc">
+        <h2>Earth</h2>
+        <p>Earth is the only known planet that supports life, with a balanced atmosphere and abundant water.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Mars -->
+  <section class="mars-section">
+    <div class="planet-container">
+      <img src="mars.png" alt="Mars" class="planet mars">
+      <div class="planet-desc">
+        <h2>Mars</h2>
+        <p>Mars is known as the Red Planet because of its rusty surface. Scientists believe it once had liquid water.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Jupiter -->
+  <section class="jupiter-section">
+    <div class="planet-container">
+      <img src="jupiter.png" alt="Jupiter" class="planet jupiter">
+      <div class="planet-desc">
+        <h2>Jupiter</h2>
+        <p>Jupiter is the largest planet in the Solar System, with strong storms like the Great Red Spot that have lasted centuries.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
